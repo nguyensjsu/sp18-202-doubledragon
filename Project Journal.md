@@ -4,8 +4,11 @@
 Jigar Soni
 
 ### What I plan to do this Week:
+Study the working of different games. 
+Study various game engines.
 
 ### What blockers I have:
+I think greenfoot is the app engine on which we should start building a small game from scratch.
 
 ### Team Member Name:
 Heli Desai
