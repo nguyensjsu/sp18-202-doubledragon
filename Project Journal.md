@@ -29,3 +29,15 @@ Also search more on the game ideas and design that would help the team achieve t
 
 ### What blockers I have:
 Learn about some design patterns and how to incorporate them.
+
+### Team Member Name:
+Ashish Virani
+
+### What I plan to do this Week:
+Researched about various game engines available and complexity of developement.
+Finalised Greenfoot for game development as it provides variety of modules and easy building of game
+Watched tutorials for how to build game in Greenfoot.
+
+### What blockers I have:
+How I will use specific design pattern that will make development more easier.
+
