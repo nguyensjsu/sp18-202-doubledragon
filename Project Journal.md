@@ -41,3 +41,13 @@ Watched tutorials for how to build game in Greenfoot.
 ### What blockers I have:
 How I will use specific design pattern that will make development more easier.
 
+### Team Member Name:
+Monank Savaliya
+
+### What I plan to do this Week:
+Research about various game ideas to implement game using greenfoot as it can be used to create programming statements to give the game objects ability to interact with each other..
+Learn How to implement simple 2D game using greenfoot game engine with Java Programming.
+
+
+### What blockers I have:
+Lean about how to apply design pattern to problems in game implementation.
