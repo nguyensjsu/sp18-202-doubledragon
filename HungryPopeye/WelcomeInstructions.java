@@ -23,6 +23,11 @@ public class WelcomeInstructions extends World
     public void showMessage(){
         GreenfootImage bg = getBackground();
         
+        bg.setFont( new Font("Comic Sans MS",34));
+        bg.setColor(Color.BLACK);
+        bg.drawString("Welcome!", 380, 200);
+        bg.setFont(new Font("Arial",12));
+        
         
     }
 }
