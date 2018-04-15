@@ -1,6 +1,6 @@
 import greenfoot.*;
 
-public class OliveClass extends Actor implements CollisionHandler
+public class OliveCollision extends Actor implements CollisionHandler
 {
     
 }
