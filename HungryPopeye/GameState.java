@@ -7,25 +7,25 @@ import greenfoot.*;
 
 public class GameState implements IGameState
 {
-
-    public GameState()
+    GameManager gm;
+    public GameState(GameManager gm)
     {    
-        
+        this.gm=gm;
     }
     
     public void start()
     {
-        
+        System.out.println("On trampoline is not valid in "+this.getClass().getName()+" state");
     }
     
     public void doJumping()
     {
-        
+        System.out.println("Jumping is not valid in "+this.getClass().getName()+" state");
     }
     
     public void die()
     {
-        
+        System.out.println("Dead is not valid in "+this.getClass().getName()+" state");
     }
     
 }
