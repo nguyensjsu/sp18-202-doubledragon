@@ -8,8 +8,7 @@ Discussed Game Idea and various design patterns that can be used in game.
 Created GameState Interface and Game State Class for managing state of game.
 
 ### What I plan to do this Week:
-Implement State Design pattern in GameManager Class.
-Apply design pattern Factory Method in the game implementation. 
+Implement State Design pattern in GameManager Class. 
 
 ### What blockers I have:
 I am waiting on CollisionHandler implementation so that I can implement WallCollision.
