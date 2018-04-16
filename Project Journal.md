@@ -4,9 +4,9 @@
 Monank Savaliya
 
 ### What I did since last weekly scrum:
-Decide Game idea and Applicatiopn of Design Pattern in Game (done)
-Develop simple GreenFoot Project with Images and Background (done)
-Implement Obstacle class with differnt subclasses for each level (done)
+Decide Game idea and Applicatiopn of Design Pattern in Game (done).
+Develop simple GreenFoot Project with Images and Background (done).
+Implement Obstacle class with differnt subclasses for each level (done).
 
 ### What I plan to do this Week:
 Start working on game implementation and develop basic game board with actors.
