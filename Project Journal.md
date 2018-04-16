@@ -1,6 +1,16 @@
 ## Double Dragon, Sprint 2
 
 ### Team Member Name:
+Jigar Soni
+
+### What I plan to do this Week:
+Discussed design idea of the game. Studied about various design patterns that could be best fit for different scenarios. 
+Created collision handler interface and OliveClass which implements the mentioned interface.
+
+### What blockers I have:
+I am thinking of creating different classes which implements the collision handler interface and will try to complete till next sprint. 
+
+### Team Member Name:
 Heli Desai
 
 ### What I did since last weekly scrum:
