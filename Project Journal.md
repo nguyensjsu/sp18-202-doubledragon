@@ -1,6 +1,20 @@
 ## Double Dragon, Sprint 2
 
 ### Team Member Name:
+Ashish Virani
+
+### What I did since last weekly scrum:
+Discussed Game Idea and various design patterns that can be used in game.
+Created GameState Interface and Game State Class for managing state of game.
+
+### What I plan to do this Week:
+Implement State Design pattern in GameManager Class.
+Apply design pattern Factory Method in the game implementation. 
+
+### What blockers I have:
+I am waiting on CollisionHandler implementation so that I can implement WallCollision.
+
+### Team Member Name:
 Monank Savaliya
 
 ### What I did since last weekly scrum:
