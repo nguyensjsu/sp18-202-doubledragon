@@ -16,7 +16,7 @@ public class WelcomeInstructions extends World
     public WelcomeInstructions()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(900, 500, 1); 
+        super(900, 600, 1); 
         showMessage();
     }
     
@@ -25,7 +25,7 @@ public class WelcomeInstructions extends World
         
         bg.setFont( new Font("Comic Sans MS",34));
         bg.setColor(Color.BLACK);
-        bg.drawString("Welcome!", 380, 200);
+        bg.drawString("", 380, 200);
         bg.setFont(new Font("Arial",12));
         
         
