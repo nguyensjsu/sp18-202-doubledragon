@@ -26,6 +26,37 @@ public class GameManager
        deadState=new PopeyeDead(this);
        currentState=onTrampolineState;
     }
+    public void onpaddle()
+    {
+        System.out.println("on the paddle");
+        currentState.start();
+    }
     
+    public void jump()
+    {
+        System.out.println("on the paddle");
+        currentState.doJumping();
+    }
+    
+    public void dead()
+    {
+        System.out.println("on the paddle");
+        currentState.die();
+    }
+    
+    public void setState(GameStates nextState)
+    {
+        switch(nextState)
+        {
+            case ONTRAMPOLINE: currentState=onTrampolineState; break;
+            case JUMPING: currentState=jumpingState; break;
+            case DEAD: currentState=deadState; break;
+        }
+    }
+    
+    public void showState()
+    {
+        System.out.println("Current State:"+currentState.getClass().getName());
+    }
 
 }
