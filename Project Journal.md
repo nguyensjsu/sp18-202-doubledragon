@@ -1,6 +1,20 @@
 ## Double Dragon, Sprint 2
 
 ### Team Member Name:
+Heli Desai
+
+### What I did since last weekly scrum:
+Discussed the Game idea and which design patterns to use for our project.
+Divided the work between teammates.
+Created Interfaces IGameInvoker for execution of the game and ICommand for command design pattern. 
+
+### What I plan to do this Week:
+Start game implementation and start implementing design pattern Command.
+
+### What blockers I have:
+I am waiting on CollisionHandler implementation so that I can implement TrampolineCollision.
+
+### Team Member Name:
 Ashish Virani
 
 ### What I did since last weekly scrum:
@@ -43,7 +57,7 @@ I think greenfoot is the app engine on which we should start building a small ga
 ### Team Member Name:
 Heli Desai
 
-### What I plan to do this Week
+### What I plan to do this Week:
 Learn about different types of games to decide our game definition.
 Learn about the greenfoot basics.
 
