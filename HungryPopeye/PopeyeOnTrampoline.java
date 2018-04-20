@@ -15,5 +15,10 @@ public class PopeyeOnTrampoline extends GameState
         super(gm);
     }
 
-    
+    @Override
+    public void doJumping()
+    {
+        gm.setState(GameManager.GameStates.JUMPING);
+        
+    }
 }
