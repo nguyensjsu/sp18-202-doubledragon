@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Thu Apr 19 23:49:32 PDT 2018
+#Fri Apr 20 09:51:25 PDT 2018
 editor.fx.0.height=0
 target2.width=100
 target8.name=Cheese
@@ -53,6 +53,7 @@ dependency5.to=IGameState
 class.MyWorld.superclass=greenfoot.World
 target18.type=InterfaceTarget
 target17.typeParameters=
+class.Score.superclass=ConcreteObserver
 target1.name=Obstacle
 target10.showInterface=false
 dependency8.from=GameManager
@@ -148,6 +149,7 @@ target10.x=0
 dependency2.to=Cheese
 target14.showInterface=false
 target12.width=100
+class.ConcreteObserver.superclass=
 target11.name=PopeyeJumping
 dependency14.type=UsesDependency
 class.IGameInvoker.superclass=
@@ -194,6 +196,7 @@ dependency16.from=OliveFactory
 <<<<<<<=HEAD
 dependency2.from=SpinachFactory
 target16.type=ClassTarget
+class.IObserver.superclass=
 target16.height=50
 dependency6.from=GameManager
 target16.typeParameters=
@@ -237,6 +240,7 @@ target8.type=ClassTarget
 target18.showInterface=false
 class.Start.superclass=greenfoot.Actor
 dependency18.to=Olive
+class.Life.superclass=greenfoot.Actor
 dependency13.from=CheeseFactory
 target20.width=80
 dependency9.type=UsesDependency
