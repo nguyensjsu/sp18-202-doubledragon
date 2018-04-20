@@ -1,6 +1,11 @@
 #Greenfoot properties
+<<<<<<< HEAD
 #Thu Apr 19 21:07:54 PDT 2018
 editor.fx.0.height=722
+=======
+#Thu Apr 19 21:11:21 PDT 2018
+editor.fx.0.height=0
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target2.width=100
 target8.name=Cheese
 target11.y=0
@@ -25,7 +30,11 @@ dependency2.type=UsesDependency
 target5.type=ClassTarget
 target6.y=0
 target6.x=0
+<<<<<<< HEAD
 target17.name=ICommand
+=======
+target17.name=Popeye
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target1.showInterface=false
 target4.y=0
 dependency10.from=GameState
@@ -41,16 +50,28 @@ target10.type=ClassTarget
 target8.height=50
 dependency10.to=GameManager
 target20.type=ClassTarget
+<<<<<<< HEAD
 dependency14.from=Board
 class.ObstacleFactory.superclass=
 target14.type=ClassTarget
 class.Olive.superclass=Obstacle
+=======
+dependency14.from=CheeseFactory
+class.ObstacleFactory.superclass=
+target14.type=ClassTarget
+class.Olive.superclass=Obstacle
+dependency18.from=OliveFactory
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target11.height=50
 target10.typeParameters=
 dependency4.from=Start
 dependency5.to=IGameState
 class.MyWorld.superclass=greenfoot.World
+<<<<<<< HEAD
 target18.type=ClassTarget
+=======
+target18.type=InterfaceTarget
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target17.typeParameters=
 target1.name=Obstacle
 target10.showInterface=false
@@ -66,7 +87,11 @@ target5.name=GameManager
 class.CheeseFactory.superclass=ObstacleFactory
 world.lastInstantiated=WelcomeInstructions
 target16.showInterface=false
+<<<<<<< HEAD
 mainWindow.width=1382
+=======
+mainWindow.width=1370
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 readme.width=47
 target19.showInterface=false
 class.OliveFactory.superclass=ObstacleFactory
@@ -74,23 +99,39 @@ target9.name=GameState
 target5.height=50
 target10.name=PopeyeOnTrampoline
 dependency13.type=UsesDependency
+<<<<<<< HEAD
 target20.name=WelcomeInstructions
 target15.typeParameters=
 target2.type=ClassTarget
 target14.name=Olive
 dependency1.to=Obstacle
 dependency17.type=UsesDependency
+=======
+target20.name=Spinach
+target15.typeParameters=
+target2.type=ClassTarget
+target22.typeParameters=
+target14.name=Olive
+dependency1.to=Obstacle
+dependency17.type=UsesDependency
+target22.showInterface=false
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 dependency3.type=UsesDependency
 target2.height=50
 target2.typeParameters=
 target6.type=ClassTarget
 target18.height=50
 dependency11.to=GameManager
+<<<<<<< HEAD
 target18.name=OliveCollision
+=======
+target18.name=ICommand
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 dependency11.from=PopeyeOnTrampoline
 target9.typeParameters=
 class.WelcomeInstructions.image=WelcomePage.jpg
 dependency7.type=UsesDependency
+<<<<<<< HEAD
 target19.width=80
 target11.type=ClassTarget
 version=3.0.0
@@ -99,6 +140,16 @@ editor.fx.0.x=320
 class.PopeyeOnTrampoline.superclass=GameState
 target21.type=ClassTarget
 dependency15.from=OliveFactory
+=======
+target19.width=100
+target11.type=ClassTarget
+version=3.0.0
+editor.fx.0.y=0
+editor.fx.0.x=0
+class.PopeyeOnTrampoline.superclass=GameState
+target21.type=ClassTarget
+dependency15.from=Board
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 class.Spinach.superclass=Obstacle
 class.PopeyeJumping.superclass=GameState
 target15.height=50
@@ -111,11 +162,19 @@ mainWindow.y=-8
 mainWindow.x=-8
 target5.showInterface=false
 target17.width=80
+<<<<<<< HEAD
 dependency16.to=Cheese
 class.OliveCollision.superclass=greenfoot.Actor
 dependency5.from=GameManager
 target8.showInterface=false
 target18.width=100
+=======
+dependency16.to=Obstacle
+class.OliveCollision.superclass=greenfoot.Actor
+dependency5.from=GameManager
+target8.showInterface=false
+target18.width=80
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target19.type=ClassTarget
 target18.y=0
 target18.x=0
@@ -136,11 +195,19 @@ target16.width=80
 target12.y=0
 target12.x=0
 dependency10.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.width=800
 target21.height=50
 target11.showInterface=false
 class.Board.superclass=greenfoot.World
 target10.y=0
+=======
+editor.fx.0.width=0
+target21.height=50
+target11.showInterface=false
+target10.y=0
+class.Board.superclass=greenfoot.World
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target10.x=0
 dependency2.to=Cheese
 target12.width=100
@@ -153,7 +220,11 @@ target13.width=90
 class.CollisionHandler.superclass=
 target9.y=0
 target17.showInterface=false
+<<<<<<< HEAD
 target21.name=OliveFactory
+=======
+target21.name=WelcomeInstructions
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target9.x=0
 target3.type=ClassTarget
 target6.height=50
@@ -161,6 +232,10 @@ dependency12.to=GameManager
 target7.y=0
 target7.x=0
 target15.name=CheeseFactory
+<<<<<<< HEAD
+=======
+dependency18.type=UsesDependency
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 class.SpinachFactory.superclass=ObstacleFactory
 target11.typeParameters=
 target5.y=0
@@ -171,7 +246,11 @@ target10.width=160
 target3.y=0
 target11.width=120
 target18.typeParameters=
+<<<<<<< HEAD
 target19.name=Spinach
+=======
+target19.name=OliveCollision
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target3.x=0
 target20.showInterface=false
 dependency12.from=PopeyeJumping
@@ -180,11 +259,21 @@ target3.height=50
 target1.y=0
 dependency8.type=UsesDependency
 target19.height=50
+<<<<<<< HEAD
 target1.x=0
 target12.type=InterfaceTarget
 target5.typeParameters=
 dependency17.to=Olive
 dependency16.from=OliveFactory
+=======
+class.Popeye.superclass=greenfoot.Actor
+target1.x=0
+target12.type=InterfaceTarget
+target5.typeParameters=
+dependency17.to=Cheese
+dependency16.from=OliveFactory
+target22.type=ClassTarget
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 <<<<<<<=HEAD
 dependency2.from=SpinachFactory
 target16.type=ClassTarget
@@ -193,7 +282,13 @@ dependency6.from=GameManager
 target16.typeParameters=
 project.charset=UTF-8
 target3.showInterface=false
+<<<<<<< HEAD
 target3.name=ObstacleFactory
+=======
+target22.y=0
+target3.name=ObstacleFactory
+target22.x=0
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target6.showInterface=false
 target20.y=0
 target20.x=0
@@ -203,6 +298,7 @@ target9.showInterface=false
 class.Cheese.superclass=Obstacle
 target7.name=CollisionHandler
 dependency11.type=UsesDependency
+<<<<<<< HEAD
 package.numDependencies=17
 class.GameState.superclass=
 dependency13.to=Cheese
@@ -212,6 +308,20 @@ target12.name=IGameInvoker
 dependency15.type=UsesDependency
 dependency1.type=UsesDependency
 target4.type=ClassTarget
+=======
+package.numDependencies=18
+class.GameState.superclass=
+dependency13.to=Cheese
+package.numTargets=22
+target12.name=IGameInvoker
+>>>>>>>=823db9f7e041b1fb3ae7fad621d339dc8ea7a71e
+target22.height=50
+dependency15.type=UsesDependency
+target22.name=OliveFactory
+dependency1.type=UsesDependency
+target4.type=ClassTarget
+target22.width=90
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target12.showInterface=false
 target8.width=80
 target13.height=50
@@ -223,15 +333,27 @@ target7.height=50
 target15.showInterface=false
 dependency5.type=UsesDependency
 target8.type=ClassTarget
+<<<<<<< HEAD
 class.Start.superclass=greenfoot.Actor
 target18.showInterface=false
 dependency13.from=CheeseFactory
 target20.width=140
+=======
+dependency18.to=Olive
+class.Start.superclass=greenfoot.Actor
+target18.showInterface=false
+dependency13.from=CheeseFactory
+target20.width=80
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 dependency9.type=UsesDependency
 target6.width=100
 target10.height=50
 target14.typeParameters=
+<<<<<<< HEAD
 target21.width=90
+=======
+target21.width=140
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target13.type=InterfaceTarget
 target21.typeParameters=
 target7.width=110
@@ -240,7 +362,11 @@ class.Obstacle.superclass=greenfoot.Actor
 dependency3.from=SpinachFactory
 target21.showInterface=false
 target1.typeParameters=
+<<<<<<< HEAD
 target17.type=InterfaceTarget
+=======
+target17.type=ClassTarget
+>>>>>>> 1e8d520b69a7e9638c71ab6861cc0241dd9bedce
 target3.width=110
 target19.y=0
 target19.x=0
