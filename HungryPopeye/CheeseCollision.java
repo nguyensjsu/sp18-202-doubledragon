@@ -16,8 +16,17 @@ import greenfoot.*;
 
     public void handleCollision(String objectName, Popeye objPopeye, int brickLocationX) {
         if(objectName.equals("cheese")){
-            System.out.println("Entered into cheese check");
-            
+            // System.out.println("Entered into cheese check");
+            int deltaY = -1 * objBall.getDeltaY();
+            objBall.setDeltaY(deltaY);
+            int offset = objBall.getX() - brickLocationX;
+            int deltaX = objBall.getDeltaX() + (offset/10);
+            if (deltaX > 7) {
+                objBall.setDeltaX(7);
+            }
+            if (deltaX < -7) {
+                objBall.setDeltaX(-7);
+            }
             //((Board)getWorld()).removeObject(brick);
             // //((Board)getWorld()).incrementScore();
             // Greenfoot.playSound("mp3");
