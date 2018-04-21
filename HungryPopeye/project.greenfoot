@@ -1,5 +1,13 @@
 #Greenfoot properties
+<<<<<<< HEAD
 #Fri Apr 20 17:23:19 PDT 2018
+||||||| merged common ancestors
+#Thu Apr 19 21:11:21 PDT 2018
+editor.fx.0.height=0
+=======
+#Fri Apr 20 09:51:25 PDT 2018
+editor.fx.0.height=0
+>>>>>>> 20e1a7c496b1a0778a5d6b206b47e86931ae2c6e
 target2.width=100
 editor.fx.0.height=739
 target8.name=Cheese
@@ -53,6 +61,7 @@ dependency5.to=IGameState
 class.MyWorld.superclass=greenfoot.World
 target18.type=InterfaceTarget
 target17.typeParameters=
+class.Score.superclass=ConcreteObserver
 target1.name=Obstacle
 target10.showInterface=false
 dependency8.from=GameManager
@@ -147,7 +156,13 @@ target10.y=0
 target10.x=0
 dependency2.to=Cheese
 target14.showInterface=false
+<<<<<<< HEAD
 target12.width=100
+||||||| merged common ancestors
+=======
+target12.width=100
+class.ConcreteObserver.superclass=
+>>>>>>> 20e1a7c496b1a0778a5d6b206b47e86931ae2c6e
 target11.name=PopeyeJumping
 dependency14.type=UsesDependency
 class.IGameInvoker.superclass=
@@ -182,10 +197,18 @@ dependency7.to=PopeyeJumping
 dependency12.from=PopeyeJumping
 target3.height=50
 target19.height=50
+<<<<<<< HEAD
 dependency8.type=UsesDependency
 target1.y=0
 class.Popeye.superclass=greenfoot.Actor
+||||||| merged common ancestors
+class.Popeye.superclass=greenfoot.Actor
+=======
+dependency8.type=UsesDependency
+target1.y=0
+>>>>>>> 20e1a7c496b1a0778a5d6b206b47e86931ae2c6e
 target1.x=0
+class.Popeye.superclass=greenfoot.Actor
 target12.type=InterfaceTarget
 target5.typeParameters=
 dependency17.to=Cheese
@@ -194,6 +217,7 @@ dependency16.from=OliveFactory
 <<<<<<<=HEAD
 dependency2.from=SpinachFactory
 target16.type=ClassTarget
+class.IObserver.superclass=
 target16.height=50
 dependency6.from=GameManager
 target16.typeParameters=
@@ -235,8 +259,15 @@ target15.showInterface=false
 dependency5.type=UsesDependency
 target8.type=ClassTarget
 target18.showInterface=false
+<<<<<<< HEAD
 class.Start.superclass=greenfoot.Actor
 dependency18.to=Olive
+||||||| merged common ancestors
+=======
+class.Start.superclass=greenfoot.Actor
+dependency18.to=Olive
+class.Life.superclass=greenfoot.Actor
+>>>>>>> 20e1a7c496b1a0778a5d6b206b47e86931ae2c6e
 dependency13.from=CheeseFactory
 target20.width=80
 dependency9.type=UsesDependency

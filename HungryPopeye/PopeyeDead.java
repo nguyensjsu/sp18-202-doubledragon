@@ -16,6 +16,11 @@ public class PopeyeDead extends GameState
     {
         super(gm);
     }
-
+    @Override
+    public void start()
+    {
+        gm.setState(GameManager.GameStates.ONTRAMPOLINE);
+       
+    }
     
 }

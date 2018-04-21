@@ -15,5 +15,9 @@ public class PopeyeJumping extends GameState
         super(gm);
     }
 
-   
+    @Override
+    public void die()
+    {
+        gm.setState(GameManager.GameStates.DEAD);
+    }
 }

@@ -52,6 +52,21 @@ Apply design pattern Factory Method in the game implementation.
 ### What blockers I have:
 I am waiting on Obstacle Factory Implementation for my Board Class implementation.
 
+### Team Member Name:
+Vijay Yadav
+
+### What I did since last weekly scrum:
+Worked on application of Observer design pattern in game.
+Developed and set up greenfoot application on local machine.
+Implement start and welcome instruction pages.
+
+### What I plan to do this Week:
+Implement a class that will interact with other classes and perform an action when the a designated key is pressed.
+Apply observer design pattern .
+
+### What blockers I have:
+I am waiting to collaborate with other team members in other to implement our code perfectly.
+
 ## Double Dragon, Sprint 1
 
 ### Team Member Name:
