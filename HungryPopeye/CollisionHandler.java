@@ -6,6 +6,6 @@
  */
 public interface CollisionHandler  
 {
-    public void handleCollision(String objectName, Popeye objPopeye);
-    
+    public void handleCollision(String objectName, Popeye objPopeye, int location);
+    public void setSuccessor(CollisionHandler next);
 }
