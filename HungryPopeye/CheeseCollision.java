@@ -27,8 +27,6 @@ import greenfoot.*;
             if (deltaX < -7) {
                 objBall.setDeltaX(-7);
             }
-            //((Board)getWorld()).removeObject(brick);
-            // //((Board)getWorld()).incrementScore();
             // Greenfoot.playSound("mp3");
         }
         else {
