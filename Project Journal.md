@@ -1,3 +1,17 @@
+## Double Dragon, Sprint 3
+
+### Team Member Name:
+Monank Savaliya
+
+### What I did since last weekly scrum:
+Implemented Factory method design pattern which can be used for creating different obstacles for different levels of the game.
+
+### What I plan to do this Week:
+Implement main business logic of the game. 
+
+### What blockers I have:
+I am waiting on ConcreteSubject class implementation so that I can implement Board class.
+
 ## Double Dragon, Sprint 2
 
 ### Team Member Name:
