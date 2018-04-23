@@ -6,25 +6,27 @@
  */
 public class ObstacleFactory  
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class ObstacleFactory
-     */
-    public ObstacleFactory()
-    {
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    static SpinachFactory l1;
+    static CheeseFactory l2;
+    static OliveFactory l3;
+    public static Obstacle createObstacle(int y){
+        Obstacle b = null;
+        switch(y){
+            case 1:
+                b =  l1.getObstacle();
+            break;
+            
+            case 2:
+                b = l2.getObstacle();
+            break;
+            
+            case 3:
+                b = l3.getObstacle();
+                
+            default:
+                break;
+        }
+        return b;
+    
     }
 }
