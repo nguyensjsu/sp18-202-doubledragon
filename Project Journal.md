@@ -15,6 +15,18 @@ Worked on some of the issues of combinig all modules. Made game working.
 ## Double Dragon, Sprint 3
 
 ### Team Member Name:
+Jigar Soni
+
+### What I did since last weekly scrum:
+I made an interface and class structure for collision handler, so that all the teammates can use it in their design.
+
+### What I plan to do this Week:
+I am thinking of implementing one class which can handle all the collision properly so that I can use it for future reuse.
+
+### What blockers I have:
+I could come up with a solution which works for all, not only for one i.e. I am learning about reusability.  
+
+### Team Member Name:
 Ashish Virani
 
 ### What I did since last weekly scrum:
