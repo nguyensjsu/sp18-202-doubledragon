@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Mon Apr 23 21:15:09 PDT 2018
+#Tue Apr 24 21:19:49 PDT 2018
 target16.name=OliveCollision
 dependency35.to=GameManager
 target26.width=100
@@ -43,6 +43,7 @@ target1.typeParameters=
 dependency39.type=UsesDependency
 dependency36.from=WallCollion
 target20.showInterface=false
+class.ExitGameCommand.superclass=greenfoot.Actor
 dependency2.to=Cheese
 class.BonusCollision.superclass=greenfoot.Actor
 dependency46.to=Board
