@@ -17,21 +17,21 @@ import greenfoot.*;
     public void handleCollision(String objectName, Popeye objPopeye, int brickLocationX) {
         if(objectName.equals("cheese")){
             // System.out.println("Entered into cheese check");
-            int deltaY = -1 * objBall.getDeltaY();
-            objBall.setDeltaY(deltaY);
-            int offset = objBall.getX() - brickLocationX;
-            int deltaX = objBall.getDeltaX() + (offset/10);
+            int deltaY = -1 * objPopeye.getDeltaY();
+            objPopeye.setDeltaY(deltaY);
+            int offset = objPopeye.getX() - brickLocationX;
+            int deltaX = objPopeye.getDeltaX() + (offset/10);
             if (deltaX > 7) {
-                objBall.setDeltaX(7);
+                objPopeye.setDeltaX(7);
             }
             if (deltaX < -7) {
-                objBall.setDeltaX(-7);
+                objPopeye.setDeltaX(-7);
             }
             // Greenfoot.playSound("mp3");
         }
         else {
             if(successor != null) {
-                successor.handleCollision(objectName, objBall, brickLocationX);
+                successor.handleCollision(objectName, objPopeye, brickLocationX);
             }    
         } 	
     }
