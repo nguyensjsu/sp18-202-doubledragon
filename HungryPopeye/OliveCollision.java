@@ -17,11 +17,7 @@ public class OliveCollision extends Actor implements CollisionHandler
             if (deltaX < -7) {
                 objPopeye.setDeltaX(-7);
             }
-        }
-        else {
-            if(successor != null) {
-                successor.handleCollision(objectName, objPopeye, oliveLocationX);
-            }    
+        }   
         }
     }
 
