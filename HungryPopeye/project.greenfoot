@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Tue Apr 24 21:19:49 PDT 2018
+#Wed Apr 25 21:33:59 PDT 2018
 target16.name=OliveCollision
 dependency35.to=GameManager
 target26.width=100
@@ -314,6 +314,7 @@ dependency14.type=UsesDependency
 dependency18.from=Board
 target18.y=0
 target18.x=0
+class.StartGameCommand.superclass=greenfoot.Actor
 class.OliveCollision.superclass=greenfoot.Actor
 target14.y=0
 dependency43.to=Board
