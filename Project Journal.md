@@ -15,6 +15,15 @@ Worked on some of the issues of combinig all modules. Made game working.
 ## Double Dragon, Sprint 3
 
 ### Team Member Name:
+Heli Desai
+
+### What I plan to do this Week:
+Worked on implementation of Command pattern and interfaces required.
+
+### What blockers I have:
+I am waiting on collision classes to be implemented so I can work on Popeye class implementation.
+
+### Team Member Name:
 Ashish Virani
 
 ### What I did since last weekly scrum:
