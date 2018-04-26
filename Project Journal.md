@@ -1,6 +1,18 @@
 ## Double Dragon, Sprint 3
 
 ### Team Member Name:
+Ashish Virani
+
+### What I did since last weekly scrum:
+Implemented State method design pattern which can be used for tranferring states of game. Created Game Manager which handles all the states of the game
+
+### What I plan to do this Week:
+Implement Board class. 
+
+### What blockers I have:
+I am waiting on ConcreteSubject class implementation so that I can implement Board class.
+
+### Team Member Name:
 Monank Savaliya
 
 ### What I did since last weekly scrum:
