@@ -35,19 +35,7 @@ public class Trampoline extends Actor
          * If the left arrow is pressed, the paddle moves 9 pixels to the left .
          * If the right arrow is pressed, the paddle moves 9 pixels to the right.
          */
-        if (Greenfoot.isKeyDown ("left")) 
-        {
-            move(-9);
-        }
-        if (Greenfoot.isKeyDown ("right")) 
-        {
-            move(9);
-        }
-        if (havePopeye() && Greenfoot.isKeyDown ("space")) {
-            //((Board)this.getWorld()).removeMessage4();
-            releasePopeye();
-            gm.setState(GameManager.GameStates.JUMPING);
-        }
+
         
     }
     
