@@ -24,6 +24,18 @@ Implement main business logic of the game.
 ### What blockers I have:
 I am waiting on ConcreteSubject class implementation so that I can implement Board class.
 
+### Team Member Name:
+Vijay Yadav
+
+### What I did since last weekly scrum:
+Implemented the observer design pattern of the game.
+
+### What I plan to do this Week:
+Implement the message file and merge the code.
+
+### What blockers I have:
+Need to figure out the way to implement message file.
+
 ## Double Dragon, Sprint 2
 
 ### Team Member Name:
@@ -91,7 +103,7 @@ Implement a class that will interact with other classes and perform an action wh
 Apply observer design pattern .
 
 ### What blockers I have:
-I am waiting to collaborate with other team members in other to implement our code perfectly.
+I am waiting to collaborate with other team members in order to implement our code perfectly.
 
 ## Double Dragon, Sprint 1
 
