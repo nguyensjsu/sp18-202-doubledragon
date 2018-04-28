@@ -68,8 +68,8 @@ public class Board extends World
         life3 = new Life();
         addObject(life3, 895,25);
         
-        clientCmd = new CommandActor(Trampoline);
-        addObject(clientCmd,0,0);
+        //clientCmd = new CommandActor(Trampoline);
+        ''addObject(clientCmd,0,0);
         
         concretesubject = ConcreteSubject.getInstance();
         scores = new Score(concretesubject);
@@ -80,5 +80,83 @@ public class Board extends World
         upgradeLevel();          
     }
     
-    
+    public void upgradeLevel()
+    {
+        if (score%10==0)
+        {
+            // Initial value of level is 0.
+            level++;
+            checkBackground();
+            message2.setText("Level: " + level);
+            
+                if(level == 1)
+                {
+                    message6 = new Message("Collect all bananas!");
+                    
+                    addObject(message6,480, 30); 
+                  
+                    for (int k = 0; k < 10; k++)
+                    {
+                        ob = b.createObstacle(1);
+                        addObstacles(ob);
+                    }
+                }
+                if(level == 2)
+                {
+                    removeObject(message6);
+                    message7 = new Message("Don't get too friendly!");
+                    addObject(message7,480, 30);
+                    
+                    
+                  for (int k = 0; k < 10; k++)
+                    {
+                        ob = b.createObstacle(2);
+                   
+                        addObstacles(ob);
+                    }
+                   
+                    //increaseBallSpeed();
+                    
+                    //trap = new Trap();
+                    //addObject(trap,490, 100);
+                    Greenfoot.playSound("Steal_the_Moon.mp3");
+                }
+                if(level == 3)
+                {
+                    removeObject(message7);
+                    message8 = new Message("Seems easy...right?");
+                    addObject(message8,480, 30); 
+                    
+                  for (int k = 0; k < 10; k++)
+                    {
+                        ob = b.createObstacle(3);
+                   
+                        addObstacles(ob);
+                    }
+                    trap = new Trap();
+                    addObject(trap,490, 100);
+                    addBonus();
+                    //increaseBallSpeed();
+                 //   Greenfoot.playSound("Try_This.mp3");
+                                    }
+                if(level == 4)
+                {
+                    removeObject(message8);
+                    removeMessage4();
+                    paddle.removeBall();
+                    removeObject(Trampoline);  
+                    ConcreteSubject concretesubject = ConcreteSubject.getInstance();
+                    concretesubject.unregister(scores);
+                    removeTraps();
+                    removeBonus();
+                    removeBananas();
+                    
+                    message9 = new Message("CONGRATULATIONS!");
+                    addObject(message9,480, 30); 
+                    
+                   // Greenfoot.playSound("Banana_song.mp3");
+                }
+                                        
+        }
+    }
 }
