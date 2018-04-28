@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Wed Apr 25 21:33:59 PDT 2018
+#Fri Apr 27 23:38:18 PDT 2018
 target16.name=OliveCollision
 dependency35.to=GameManager
 target26.width=100
@@ -391,6 +391,7 @@ target3.width=80
 dependency17.from=Board
 dependency23.to=ConcreteSubject
 target31.height=50
+class.Trap.superclass=greenfoot.Actor
 target23.height=50
 dependency20.type=UsesDependency
 target28.y=0
