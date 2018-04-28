@@ -73,9 +73,9 @@ public class Popeye extends Actor
         
         CollisionHandler h1 = new WallCollision();
         CollisionHandler h2 = new PaddleCollision();
-        CollisionHandler h3 = new BananaCollision();
-        CollisionHandler h4 = new AppleCollision();
-        CollisionHandler h5 = new CherryCollision();
+        CollisionHandler h3 = new SpinachCollision();
+        CollisionHandler h4 = new CheeseCollision();
+        CollisionHandler h5 = new OliveCollision();
         CollisionHandler h6 = new BonusCollision();
         
         h1.setSuccessor(h2);
