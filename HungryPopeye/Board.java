@@ -9,14 +9,37 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Board extends World
 {
 
-    /**
-     * Constructor for objects of class Board.
-     * 
-     */
+    private String[] backgroundImages = {"level0.jpg","level1.jpg","level2.jpg","level3.jpg","level4.jpg"};
+    private int score = 0;
+    private int level = 0;
+    
+    private Message message1 = null;
+    private Message message2 = null;
+    private Message message3 = null;
+    private Message message4 = null;
+    private Message message5 = null;
+    private Message message6 = null;
+    private Message message7 = null;
+    private Message message8 = null;
+    private Message message9 = null;
+    
+    //CommandActor clientCmd;
+    ObstacleFactory b;
+    Obstacles ob;
+    private Trampoline trampoline; 
+    private Cheese Banana;
+    //private Bonus bonus;
+    //private Trap trap;
+    private Popeye popeye;
+    private Life life1;
+    private Life life2;
+    private Life life3;
+    private ConcreteSubject concretesubject;
+    private Score scores;
     
     public Board()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        // Construct a new world. Width, Height and cellSize
+        super(924, 520, 1);
     }
 }
