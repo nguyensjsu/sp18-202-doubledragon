@@ -25,7 +25,7 @@ public class Board extends World
     
     //CommandActor clientCmd;
     ObstacleFactory b;
-    Obstacles ob;
+    Obstacle ob;
     private Trampoline trampoline; 
     private Cheese Banana;
     //private Bonus bonus;
@@ -41,5 +41,44 @@ public class Board extends World
     {    
         // Construct a new world. Width, Height and cellSize
         super(924, 520, 1);
+        setPaintOrder ( Popeye.class, Smoke.class );
+        
+        Trampoline = new Trampoline();
+        addObject ( Trampoline, getWidth() / 2, getHeight() - 40);
+       
+        message1 = new Message("Score: " + score);
+        addObject(message1, 125, 30);
+        
+        message2 = new Message("Level: " + level);
+        addObject(message2,125, 60);
+        
+        message3 = new Message("Lives:");
+        addObject(message3, 850, 30);
+        
+        message4 = new Message("Press space to jump...");
+        addObject(message4, 480, 60);
+                
+        
+        life1 = new Life();
+        addObject(life1, 825,25);
+        
+        life2 = new Life();
+        addObject(life2, 860,25);
+        
+        life3 = new Life();
+        addObject(life3, 895,25);
+        
+        clientCmd = new CommandActor(Trampoline);
+        addObject(clientCmd,0,0);
+        
+        concretesubject = ConcreteSubject.getInstance();
+        scores = new Score(concretesubject);
+        concretesubject.register(scores);
+        //wallCollision = new WallCollision(); 
+        //addObject(wallCollision, 0, 0);        
+        
+        upgradeLevel();          
     }
+    
+    
 }
