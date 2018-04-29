@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Fri Apr 27 23:38:18 PDT 2018
+#Sun Apr 29 16:41:58 PDT 2018
 target16.name=OliveCollision
 dependency35.to=GameManager
 target26.width=100
@@ -466,6 +466,7 @@ dependency16.from=PopeyeOnTrampoline
 dependency19.type=UsesDependency
 target13.showInterface=false
 target4.showInterface=false
+class.TrampolineCollision.superclass=greenfoot.Actor
 target35.height=50
 target27.width=80
 target15.type=InterfaceTarget
