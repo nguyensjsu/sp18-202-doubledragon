@@ -17,9 +17,12 @@ public class StartGameReceiver extends Actor implements IGameReceiver
     
     public void doAction(Paddle paddle)
    {
-        
+        try
+        {
             this.p = paddle;
             p.releaseBall();            
-        
+        }
+        catch(Exception e){
+        }
     }
 }
