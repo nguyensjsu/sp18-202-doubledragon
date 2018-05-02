@@ -24,5 +24,8 @@ public class OliveCollision extends Actor implements CollisionHandler
             }    
         }
     }
+    public void setSuccessor(CollisionHandler next) {
+        this.successor = next;
+    }
 
 }

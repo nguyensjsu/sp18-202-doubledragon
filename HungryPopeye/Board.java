@@ -25,7 +25,7 @@ public class Board extends World
     
     CommandActor clientCmd;
     ObstacleFactory b;
-    Obstacle ob;
+    Obstacles ob;
     private Trampoline trampoline; 
     private Olive olive;
     private Bonus bonus;
@@ -41,7 +41,7 @@ public class Board extends World
     {    
         // Construct a new world. Width, Height and cellSize
         super(924, 520, 1);
-        setPaintOrder ( Popeye.class, Smoke.class );
+        setPaintOrder ( Popeye.class );
         
         trampoline = new Trampoline();
         addObject ( trampoline, getWidth() / 2, getHeight() - 40);
