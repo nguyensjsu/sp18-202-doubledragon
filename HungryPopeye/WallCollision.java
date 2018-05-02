@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class WallCollion extends Actor implements CollisionHandler
+public class WallCollision extends Actor implements CollisionHandler
 {
     private CollisionHandler successor = null;
     public void handleCollision(String objectName, Popeye objPopeye, int location) {

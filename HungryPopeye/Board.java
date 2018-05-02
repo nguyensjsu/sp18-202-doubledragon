@@ -43,8 +43,8 @@ public class Board extends World
         super(924, 520, 1);
         setPaintOrder ( Popeye.class, Smoke.class );
         
-        Trampoline = new Trampoline();
-        addObject ( Trampoline, getWidth() / 2, getHeight() - 40);
+        Trampoline trampoline = new Trampoline();
+        addObject ( trampoline, getWidth() / 2, getHeight() - 40);
        
         message1 = new Message("Score: " + score);
         addObject(message1, 125, 30);
@@ -69,7 +69,7 @@ public class Board extends World
         addObject(life3, 895,25);
         
         //clientCmd = new CommandActor(Trampoline);
-        ''addObject(clientCmd,0,0);
+        addObject(clientCmd,0,0);
         
         concretesubject = ConcreteSubject.getInstance();
         scores = new Score(concretesubject);

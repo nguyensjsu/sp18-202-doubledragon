@@ -40,7 +40,7 @@ public class Popeye extends Actor
         if (!stuck)
         {
             move();
-            makeSmoke();
+            //makeSmoke();
             if(((Board) getWorld()).endScreen())
             {
                 verticalBounce();
