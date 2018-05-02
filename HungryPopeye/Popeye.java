@@ -72,10 +72,10 @@ public class Popeye extends Actor
         Board world = (Board)getWorld();
         
         CollisionHandler h1 = new WallCollision();
-        CollisionHandler h2 = new PaddleCollision();
-        CollisionHandler h3 = new BananaCollision();
-        CollisionHandler h4 = new AppleCollision();
-        CollisionHandler h5 = new CherryCollision();
+        CollisionHandler h2 = new TrampolineCollision();
+        CollisionHandler h3 = new SpinachCollision();
+        CollisionHandler h4 = new CheeseCollision();
+        CollisionHandler h5 = new OliveCollision();
         CollisionHandler h6 = new BonusCollision();
         
         h1.setSuccessor(h2);
@@ -124,6 +124,18 @@ public class Popeye extends Actor
         }
     }
     
+    public void checkOut()
+    {
+        Actor trap = getOneIntersectingObject(Trap.class);
+        // This condition checks for both intersection with Trap object and Minion paddle. 
+        if (getY() == getWorld().getHeight()-1 || trap != null) 
+        {
+            ((Board) getWorld()).popeyeIsOut();
+            getWorld().removeObject(this);
+            gm.setState(GameManager.GameStates.DEAD);
+        }
+    }
+
 
     public void verticalBounce()
     {
@@ -142,6 +154,15 @@ public class Popeye extends Actor
     public void move(int dist)
     {
         setLocation (getX() + dist, getY());
+    }
+    
+    public void makeSmoke()
+    {
+        count--;
+        if (count == 0) {
+            getWorld().addObject ( new Smoke(), getX(), getY());
+            count = 2;
+        }
     }
     
     public void release()
