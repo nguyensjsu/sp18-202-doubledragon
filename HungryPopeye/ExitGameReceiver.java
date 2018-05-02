@@ -8,7 +8,7 @@ public class ExitGameReceiver extends Actor implements IGameReceiver
         
     }    
     
-    public void doAction(Paddle paddle)
+    public void doAction(Trampoline trampoline)
     {
       //System.out.println("Stop Game");
       //System.exit(0);

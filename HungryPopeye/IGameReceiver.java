@@ -7,4 +7,6 @@
 public interface IGameReceiver  
 {
   
+    public void doAction(Trampoline t);
+
 }
