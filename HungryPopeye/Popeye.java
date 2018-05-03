@@ -154,4 +154,16 @@ public class Popeye extends Actor
         stuck = false;
         Greenfoot.playSound("Yahoo.wav");      
     }
+    
+    public void checkOut()
+    {
+        Actor trap = getOneIntersectingObject(Trap.class);
+        // This condition checks for both intersection with Trap object and Minion paddle. 
+        if (getY() == getWorld().getHeight()-1 || trap != null) 
+        {
+            ((Board) getWorld()).popeyeIsOut();
+            getWorld().removeObject(this);
+            gm.setState(GameManager.GameStates.DEAD);
+        }
+    }
 }

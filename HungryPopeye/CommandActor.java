@@ -37,8 +37,8 @@ public class CommandActor extends Actor
         myGameInvoker = new GameInvoker();
         startGameRecevier= new StartGameReceiver();
         exitGameReceiver= new ExitGameReceiver();
-        startGame = new StartGameCommand(startGameRecevier, p);
-        exitGame = new ExitGameCommand(exitGameReceiver, p);               
+        startGame = new StartGameCommand(startGameRecevier, t);
+        exitGame = new ExitGameCommand(exitGameReceiver, t);               
     }
     
     public void callInvoker(){

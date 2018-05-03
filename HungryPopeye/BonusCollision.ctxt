@@ -1,7 +1,8 @@
 #BlueJ class context
 comment0.target=BonusCollision
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ BonusCollision\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ BonusCollision\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=2
+comment1.params=objectName\ objPopeye\ bonusLocationX
+comment1.target=void\ handleCollision(java.lang.String,\ Popeye,\ int)
+comment2.params=next
+comment2.target=void\ setSuccessor(CollisionHandler)
+numComments=3

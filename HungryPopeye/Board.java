@@ -23,13 +23,13 @@ public class Board extends World
     private Message message8 = null;
     private Message message9 = null;
     
-    //CommandActor clientCmd;
+    CommandActor clientCmd;
     ObstacleFactory b;
     Obstacle ob;
     private Trampoline trampoline; 
     private Cheese Banana;
-    //private Bonus bonus;
-    //private Trap trap;
+    private Bonus bonus;
+    private Trap trap;
     private Popeye popeye;
     private Life life1;
     private Life life2;
@@ -41,7 +41,7 @@ public class Board extends World
     {    
         // Construct a new world. Width, Height and cellSize
         super(924, 520, 1);
-        setPaintOrder ( Popeye.class, Smoke.class );
+        //setPaintOrder ( Popeye.class, Smoke.class );
         
         trampoline = new Trampoline();
         addObject ( trampoline, getWidth() / 2, getHeight() - 40);
@@ -143,13 +143,13 @@ public class Board extends World
                 {
                     removeObject(message8);
                     removeMessage4();
-                    paddle.removeBall();
-                    removeObject(Trampoline);  
+                    trampoline.removePopeye();
+                    removeObject(trampoline);  
                     ConcreteSubject concretesubject = ConcreteSubject.getInstance();
                     concretesubject.unregister(scores);
                     removeTraps();
                     removeBonus();
-                    removeBananas();
+                    removeSpinach();
                     
                     message9 = new Message("CONGRATULATIONS!");
                     addObject(message9,480, 30); 
@@ -158,5 +158,168 @@ public class Board extends World
                 }
                                         
         }
+    }
+    
+    public void checkBackground()
+    {
+           this.setBackground(backgroundImages[level%backgroundImages.length]);
+    }
+    
+    /**
+     * The endScreen () method indicates whether we are in level 4 or not . The method is called the Ball class .
+     */
+    public boolean endScreen()
+    {
+        if(level == 4)
+        {
+            return true;
+        }
+        else 
+        {
+            return false;
+        }
+    }
+    
+    /**
+     * De methode incrementScore() verhoogt de score met 1. 
+     * Vervolgens worden de methode upgradeLevel() en addTrap() aangeroepen om te zien of deze moeten worden uitgevoerd.
+     */
+    public void incrementScore()
+    {
+        score ++;
+        message1.setText("Score: " + score);
+        upgradeLevel();
+        //addTrap();
+    }
+    
+    /**
+     * The ballIsOut () method tells you what to do if it is determined that the Minion (ball) is not in the world where it should be.
+     */
+    public void popeyeIsOut()
+    {
+       // Greenfoot.playSound("Hohoho.mp3");
+        if (trampoline.getNumPopeyes() > 3)
+        {
+            removeObject(life3);
+            removeObject(message6);
+            removeObject(message7);
+            removeObject(message8);
+            
+            message5 = new Message("GAME OVER");
+            addObject(message5,510, 30);
+            ConcreteSubject concretesubject = ConcreteSubject.getInstance();
+            concretesubject.unregister(scores);
+        }
+        else
+        {
+            if(trampoline.getNumPopeyes()==2)
+            {
+                removeObject(life1);
+            }
+            if(trampoline.getNumPopeyes()==3)
+            {
+                removeObject(life2);
+            }
+            
+            trampoline.newPopeye();
+            message4 = new Message("Press space to jump...");
+            addObject(message4,480, 60);
+        }
+               
+    }
+        
+    /**
+     * The addBanana () method adds 10 bananas ( Bananas ) to anywhere on the screen ( within limits ).
+     */
+    public void addObstacles(Obstacle o)
+    
+    {
+        Obstacle temp;
+        temp = o;
+        
+        
+
+          int x = Greenfoot.getRandomNumber(814)+50;
+            int y = Greenfoot.getRandomNumber(250)+70;
+            addObject (temp, x , y);
+        
+            
+    }
+    
+    public void addTrap()
+    {
+        if (score == Greenfoot.getRandomNumber(10) + 20)
+        {
+            trap = new Trap();
+            int x = Greenfoot.getRandomNumber(814)+50;
+            int y = Greenfoot.getRandomNumber(250)+70;
+            addObject (trap, x , y);
+        }
+    
+    }
+    
+    /**
+     * The method addBonus () place anywhere a bunch of bananas for an extra life .
+     * But only if the player has only one life at the start of level 2 or 3 (see upgrade level ()) 
+     */
+    public void addBonus()
+    {
+        if(trampoline.getNumPopeyes()==4)
+        {
+            bonus = new Bonus();
+            int x = Greenfoot.getRandomNumber(814)+50;
+            int y = Greenfoot.getRandomNumber(250)+70;
+            addObject (bonus, x , y);
+        }
+    }
+    
+    /**
+     * If the Minion (ball) touches the bunch of bananas (bonus) the player gets an extra life.
+     */
+    public void ballHitsBonus()
+    {
+          removeObject(bonus);
+          trampoline.reduceNumPopeyes();
+          addObject(life2, 860, 25);
+         // Greenfoot.playSound("Babanana.mp3");
+          
+    }
+    
+    /*public void increaseBallSpeed()
+    {
+        ((Ball)(getObjects(Ball.class).get(0))).incrementSpeed();
+    }*/
+    
+    /**
+     * This method removes message4 ( "Press space to jump ...").
+     * This is called the Paddle class .
+     */
+    public void removeMessage4()
+    {
+        this.removeObject(message4);
+    }
+    
+    /**
+     * The traps remove() method removes all Evil Minions (traps) present in the world.
+     */
+    public void removeTraps()
+    {
+        removeObjects(getObjects(Trap.class));
+    }
+    
+    /**
+     * The bonus remove() method removes all banana bunches (bonus) present in the world.
+     */
+    public void removeBonus()
+    {
+        removeObjects(getObjects(Bonus.class));
+    }
+    
+    /**
+     * The Bananas remove() method removes all spinach present in the world .
+     */
+    public void removeSpinach()
+    {
+        removeObjects(getObjects(Spinach.class));
     }
 }
