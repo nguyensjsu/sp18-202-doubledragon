@@ -124,18 +124,6 @@ public class Popeye extends Actor
         }
     }
     
-    public void checkOut()
-    {
-        Actor trap = getOneIntersectingObject(Trap.class);
-        // This condition checks for both intersection with Trap object and Minion paddle. 
-        if (getY() == getWorld().getHeight()-1 || trap != null) 
-        {
-            ((Board) getWorld()).popeyeIsOut();
-            getWorld().removeObject(this);
-            gm.setState(GameManager.GameStates.DEAD);
-        }
-    }
-
 
     public void verticalBounce()
     {
@@ -154,15 +142,6 @@ public class Popeye extends Actor
     public void move(int dist)
     {
         setLocation (getX() + dist, getY());
-    }
-    
-    public void makeSmoke()
-    {
-        count--;
-        if (count == 0) {
-            getWorld().addObject ( new Smoke(), getX(), getY());
-            count = 2;
-        }
     }
     
     public void release()
