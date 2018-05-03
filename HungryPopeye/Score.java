@@ -10,7 +10,7 @@ public class Score extends ConcreteObserver
     }
      public void update(Board world)
     {
-        world.incrementScore();
+        //world.incrementScore();
         /* int score = world.getScore();
         score++;
         world.setScore(score);

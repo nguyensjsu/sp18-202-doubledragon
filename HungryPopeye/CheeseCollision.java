@@ -1,15 +1,15 @@
 import greenfoot.*;
 
-public class OliveCollision extends Actor implements CollisionHandler
+public class CheeseCollision extends Actor implements CollisionHandler
 {
     private CollisionHandler successor = null;
 
-    public void handleCollision(String objectName, Popeye objPopeye, int oliveLocationX) {
-        if(objectName.equals("olive")){
+    public void handleCollision(String objectName, Popeye objPopeye, int cheeseLocationX) {
+        if(objectName.equals("cheese")){
 
             int deltaY = -1 * objPopeye.getDeltaY();
             objPopeye.setDeltaY(deltaY);
-            int offset = objPopeye.getX() - oliveLocationX;
+            int offset = objPopeye.getX() - cheeseLocationX;
             int deltaX = objPopeye.getDeltaX() + (offset/10);
             if (deltaX > 7) {
                 objPopeye.setDeltaX(7);
@@ -20,7 +20,7 @@ public class OliveCollision extends Actor implements CollisionHandler
         }
         else {
             if(successor != null) {
-                successor.handleCollision(objectName, objPopeye, oliveLocationX);
+                successor.handleCollision(objectName, objPopeye, cheeseLocationX);
             }    
         }
     }
