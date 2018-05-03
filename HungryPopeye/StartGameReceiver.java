@@ -8,19 +8,19 @@ import greenfoot.*;
  */
 public class StartGameReceiver extends Actor implements IGameReceiver
 {
-    Paddle p;
+    Trampoline t;
     
     public void act() 
     {
         // Add your action code here.
     }    
     
-    public void doAction(Paddle paddle)
+    public void doAction(Trampoline trampoline)
    {
         try
         {
-            this.p = paddle;
-            p.releaseBall();            
+            this.t = trampoline;
+            t.releasePopeye();            
         }
         catch(Exception e){
         }
