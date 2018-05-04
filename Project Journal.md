@@ -23,8 +23,11 @@ Worked on some of the issues of combinig all modules. Made game working.
 ### Team Member Name:
 Heli Desai
 
-### What I plan to do this Week:
+### What I did since last weekly scrum:
 Worked on implementation of Command pattern and interfaces required.
+
+### What I plan to do this Week:
+Work on implementation of Popeye class.
 
 ### What blockers I have:
 I am waiting on collision classes to be implemented so I can work on Popeye class implementation.
