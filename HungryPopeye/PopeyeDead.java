@@ -20,7 +20,7 @@ public class PopeyeDead extends GameState
    @Override
     public void start()
     {
-        gm_manager.setState(GameManager.GameStates.ONPADDLE);
+        gm_manager.setState(GameManager.GameStates.ONTRAMPOLINE);
         //System.out.println("Jumping is not valid in "+this.getClass().getName()+" state");
     }
 }

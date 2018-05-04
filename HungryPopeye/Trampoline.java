@@ -1,14 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * The trampoline is a trapoline in this game.
- * The Popeye (popeye) jumps during the game on the trampoline.
- * The trampoline can be controlled from the keyboard using left and right keys to catch the Popeye (popeye).
- * Pressing space starts a Popeye (popeye) jumping.
- * 
- * @author CMPE 202 Project Team 12
- * @version 1.0
- */
 public class Trampoline extends Actor
 {
     private Popeye myPopeye;  // used before popeye gets released
