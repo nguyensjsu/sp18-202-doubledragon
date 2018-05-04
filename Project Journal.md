@@ -1,6 +1,12 @@
 ## Double Dragon, Sprint 4
 
 ### Team Member Name:
+Heli Desai
+
+### What I did since last weekly scrum:
+finished implementation of Command pattern and popeye class. Worked on integration of different classes and other final codes.
+
+### Team Member Name:
 Monank Savaliya
 
 ### What I did since last weekly scrum:
@@ -15,6 +21,7 @@ Worked on some of the issues of combinig all modules. Made game working.
 ## Double Dragon, Sprint 3
 
 ### Team Member Name:
+
 Jigar Soni
 
 ### What I did since last weekly scrum:
@@ -25,6 +32,17 @@ I am thinking of implementing one class which can handle all the collision prope
 
 ### What blockers I have:
 I could come up with a solution which works for all, not only for one i.e. I am learning about reusability.  
+
+Heli Desai
+
+### What I did since last weekly scrum:
+Worked on implementation of Command pattern and interfaces required.
+
+### What I plan to do this Week:
+Work on implementation of Popeye class.
+
+### What blockers I have:
+I am waiting on collision classes to be implemented so I can work on Popeye class implementation.
 
 ### Team Member Name:
 Ashish Virani
