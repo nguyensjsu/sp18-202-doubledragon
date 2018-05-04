@@ -1,6 +1,13 @@
 ## Double Dragon, Sprint 4
 
 ### Team Member Name:
+
+Jigar Soni
+
+### What I did since last weekly scrum:
+Finished all the task decided to complete during the  sprints. It includes implementation of the pattern - Chain of Responsibility.
+
+### Team Member Name:
 Heli Desai
 
 ### What I did since last weekly scrum:
