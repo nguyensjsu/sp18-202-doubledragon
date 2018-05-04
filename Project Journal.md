@@ -1,6 +1,12 @@
 ## Double Dragon, Sprint 4
 
 ### Team Member Name:
+Heli Desai
+
+### What I did since last weekly scrum:
+finished implementation of Command pattern and popeye class. Worked on integration of different classes and other final codes.
+
+### Team Member Name:
 Monank Savaliya
 
 ### What I did since last weekly scrum:
