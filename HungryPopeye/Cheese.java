@@ -1,15 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Paneer here.
+ * A bonus is a large bunch of spinachs.
+ * Player gets an extra life if it collides with bonus. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author CMPE 202 Project Team 12
+ * @version 1.0
  */
 public class Cheese extends Obstacle
 {
     /**
-     * Act - do whatever the Paneer wants to do. This method is called whenever
+     * Act - do whatever the Bonus wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 

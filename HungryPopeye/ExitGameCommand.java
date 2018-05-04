@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
  * Write a description of class ExitGameCommand here.
@@ -19,15 +19,14 @@ public class ExitGameCommand extends Actor implements ICommand
     /**
      * Constructor for objects of class exitGame
      */
-    public ExitGameCommand(IGameReceiver newGame, Trampoline t)
+    public ExitGameCommand(IGameReceiver newGame, Trampoline p)
     {
         this.changeGame=newGame;
-        this.trampoline = t;
+        this.trampoline = p;
     }
     
     public void execute()
     {
         changeGame.doAction(trampoline);
     }       
-
 }

@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
  * Write a description of class BonusCollision here.
@@ -9,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BonusCollision extends Actor implements CollisionHandler
 {
     private CollisionHandler successor = null;
-    
     public void handleCollision(String objectName, Popeye objPopeye, int bonusLocationX) {
         if(objectName.equals("bonus")){
             //System.out.println("Entered into bonus check");

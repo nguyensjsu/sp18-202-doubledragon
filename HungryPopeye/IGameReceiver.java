@@ -4,9 +4,8 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
+
 public interface IGameReceiver  
 {
-  
-    public void doAction(Trampoline t);
-
+    public void doAction(Trampoline p);
 }

@@ -1,6 +1,12 @@
-import greenfoot.*;  
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 
+/**
+Concrete Subject
+ * 
+ * @author (team 12) 
+ * 
+ */
 public class ConcreteSubject implements ISubject
 {
     //private ArrayList<IObserver> observers = new ArrayList<IObserver>();

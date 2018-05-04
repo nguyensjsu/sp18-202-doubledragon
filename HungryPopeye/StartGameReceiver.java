@@ -8,7 +8,7 @@ import greenfoot.*;
  */
 public class StartGameReceiver extends Actor implements IGameReceiver
 {
-    Trampoline t;
+    Trampoline p;
     
     public void act() 
     {
@@ -19,8 +19,8 @@ public class StartGameReceiver extends Actor implements IGameReceiver
    {
         try
         {
-            this.t = trampoline;
-            t.releasePopeye();            
+            this.p = trampoline;
+            p.releasePopeye();            
         }
         catch(Exception e){
         }

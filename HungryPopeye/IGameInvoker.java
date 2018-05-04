@@ -6,5 +6,5 @@
  */
 public interface IGameInvoker  
 {
-    public void executeGame(ICommand cmd);
- }
+   public void executeGame(ICommand cmd);
+}

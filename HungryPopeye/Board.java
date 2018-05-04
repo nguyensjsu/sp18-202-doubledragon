@@ -1,14 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Board here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class Board extends World
 {
-
     private String[] backgroundImages = {"level0.jpg","level1.jpg","level2.jpg","level3.jpg","level4.jpg"};
     private int score = 0;
     private int level = 0;
@@ -27,7 +21,7 @@ public class Board extends World
     ObstacleFactory b;
     Obstacle ob;
     private Trampoline trampoline; 
-    private Cheese Banana;
+    private Spinach Spinach;
     private Bonus bonus;
     private Trap trap;
     private Popeye popeye;
@@ -36,12 +30,12 @@ public class Board extends World
     private Life life3;
     private ConcreteSubject concretesubject;
     private Score scores;
-    
+   
     public Board()
     {    
         // Construct a new world. Width, Height and cellSize
         super(924, 520, 1);
-        //setPaintOrder ( Popeye.class, Smoke.class );
+        setPaintOrder ( Popeye.class, Smoke.class );
         
         trampoline = new Trampoline();
         addObject ( trampoline, getWidth() / 2, getHeight() - 40);
@@ -68,14 +62,13 @@ public class Board extends World
         life3 = new Life();
         addObject(life3, 895,25);
         
-        //clientCmd = new CommandActor(Trampoline);
+        clientCmd = new CommandActor(trampoline);
         addObject(clientCmd,0,0);
         
         concretesubject = ConcreteSubject.getInstance();
         scores = new Score(concretesubject);
         concretesubject.register(scores);
-        //wallCollision = new WallCollision(); 
-        //addObject(wallCollision, 0, 0);        
+              
         
         upgradeLevel();          
     }
@@ -91,14 +84,14 @@ public class Board extends World
             
                 if(level == 1)
                 {
-                    message6 = new Message("Collect all bananas!");
+                    message6 = new Message("Collect all spinachs!");
                     
                     addObject(message6,480, 30); 
                   
                     for (int k = 0; k < 10; k++)
                     {
                         ob = b.createObstacle(1);
-                        addObstacles(ob);
+                        addObstacle(ob);
                     }
                 }
                 if(level == 2)
@@ -112,14 +105,10 @@ public class Board extends World
                     {
                         ob = b.createObstacle(2);
                    
-                        addObstacles(ob);
+                        addObstacle(ob);
                     }
                    
-                    //increaseBallSpeed();
                     
-                    //trap = new Trap();
-                    //addObject(trap,490, 100);
-                    Greenfoot.playSound("Steal_the_Moon.mp3");
                 }
                 if(level == 3)
                 {
@@ -131,13 +120,12 @@ public class Board extends World
                     {
                         ob = b.createObstacle(3);
                    
-                        addObstacles(ob);
+                        addObstacle(ob);
                     }
                     trap = new Trap();
                     addObject(trap,490, 100);
                     addBonus();
-                    //increaseBallSpeed();
-                 //   Greenfoot.playSound("Try_This.mp3");
+                    
                                     }
                 if(level == 4)
                 {
@@ -149,25 +137,24 @@ public class Board extends World
                     concretesubject.unregister(scores);
                     removeTraps();
                     removeBonus();
-                    removeSpinach();
+                    removeSpinachs();
                     
                     message9 = new Message("CONGRATULATIONS!");
                     addObject(message9,480, 30); 
                     
-                   // Greenfoot.playSound("Banana_song.mp3");
+                   
                 }
                                         
         }
     }
     
+   
     public void checkBackground()
     {
            this.setBackground(backgroundImages[level%backgroundImages.length]);
     }
     
-    /**
-     * The endScreen () method indicates whether we are in level 4 or not . The method is called the Ball class .
-     */
+    
     public boolean endScreen()
     {
         if(level == 4)
@@ -180,10 +167,7 @@ public class Board extends World
         }
     }
     
-    /**
-     * De methode incrementScore() verhoogt de score met 1. 
-     * Vervolgens worden de methode upgradeLevel() en addTrap() aangeroepen om te zien of deze moeten worden uitgevoerd.
-     */
+    
     public void incrementScore()
     {
         score ++;
@@ -192,12 +176,10 @@ public class Board extends World
         //addTrap();
     }
     
-    /**
-     * The ballIsOut () method tells you what to do if it is determined that the Minion (ball) is not in the world where it should be.
-     */
+    
     public void popeyeIsOut()
     {
-       // Greenfoot.playSound("Hohoho.mp3");
+       
         if (trampoline.getNumPopeyes() > 3)
         {
             removeObject(life3);
@@ -227,11 +209,8 @@ public class Board extends World
         }
                
     }
-        
-    /**
-     * The addBanana () method adds 10 bananas ( Bananas ) to anywhere on the screen ( within limits ).
-     */
-    public void addObstacles(Obstacle o)
+   
+    public void addObstacle(Obstacle o)
     
     {
         Obstacle temp;
@@ -258,10 +237,7 @@ public class Board extends World
     
     }
     
-    /**
-     * The method addBonus () place anywhere a bunch of bananas for an extra life .
-     * But only if the player has only one life at the start of level 2 or 3 (see upgrade level ()) 
-     */
+    
     public void addBonus()
     {
         if(trampoline.getNumPopeyes()==4)
@@ -272,54 +248,37 @@ public class Board extends World
             addObject (bonus, x , y);
         }
     }
-    
-    /**
-     * If the Minion (ball) touches the bunch of bananas (bonus) the player gets an extra life.
-     */
-    public void ballHitsBonus()
+   
+    public void popeyeHitsBonus()
     {
           removeObject(bonus);
           trampoline.reduceNumPopeyes();
           addObject(life2, 860, 25);
-         // Greenfoot.playSound("Babanana.mp3");
+         
           
     }
     
-    /*public void increaseBallSpeed()
-    {
-        ((Ball)(getObjects(Ball.class).get(0))).incrementSpeed();
-    }*/
     
-    /**
-     * This method removes message4 ( "Press space to jump ...").
-     * This is called the Paddle class .
-     */
     public void removeMessage4()
     {
         this.removeObject(message4);
     }
     
-    /**
-     * The traps remove() method removes all Evil Minions (traps) present in the world.
-     */
     public void removeTraps()
     {
         removeObjects(getObjects(Trap.class));
     }
     
-    /**
-     * The bonus remove() method removes all banana bunches (bonus) present in the world.
-     */
+    
     public void removeBonus()
     {
         removeObjects(getObjects(Bonus.class));
     }
     
-    /**
-     * The Bananas remove() method removes all spinach present in the world .
-     */
-    public void removeSpinach()
+   
+    public void removeSpinachs()
     {
         removeObjects(getObjects(Spinach.class));
     }
 }
+ 

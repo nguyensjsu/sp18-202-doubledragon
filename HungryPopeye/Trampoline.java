@@ -1,33 +1,37 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Trampoline here.
+ * The trampoline is a trapoline in this game.
+ * The Popeye (popeye) jumps during the game on the trampoline.
+ * The trampoline can be controlled from the keyboard using left and right keys to catch the Popeye (popeye).
+ * Pressing space starts a Popeye (popeye) jumping.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author CMPE 202 Project Team 12
+ * @version 1.0
  */
 public class Trampoline extends Actor
 {
-    /**
-     * Act - do whatever the Trampoline wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    private Popeye popeye;  // used before popeye gets released
-    public int numPopeye = 1; // Displays the number of Popeye. Starts on one standard
+    private Popeye myPopeye;  // used before popeye gets released
+    public int numPopeye = 1; // Displays the number of Popeye ( popeye). Starts on one standard
     GameManager gm = new GameManager();
-    
+    //ConcreteSubject concretesubject = new ConcreteSubject();
+    //private ConcreteSubject concretesubject;
+    //private Score score;
+       
     /**
-     * When the Trampoline gets created, create a popeye as well.
+     * When the trampoline gets created, create a popeye as well.
      */
     public void addedToWorld(World world)
     {
         newPopeye();
     }
     
+    /**
+     * Act - do whatever the Trampoline wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public void act() 
     {
-        // Add your action code here.
-        
         /**
          * If the left arrow is pressed, the trampoline moves 9 pixels to the left .
          * If the right arrow is pressed, the trampoline moves 9 pixels to the right.
@@ -41,37 +45,39 @@ public class Trampoline extends Actor
             move(9);
         }
         if (havePopeye() && Greenfoot.isKeyDown ("space")) {
-            //((Board)this.getWorld()).removeMessage4();
+            ((Board)this.getWorld()).removeMessage4();
             releasePopeye();
             gm.setState(GameManager.GameStates.JUMPING);
         }
-    }    
+        
+    }
+    
     public void move(int dist)
     {
         setLocation (getX() + dist, getY());
-        if (popeye != null) 
+        if (myPopeye != null) 
         {
-            popeye.move (dist);
+            myPopeye.move (dist);
         }
     }
     
     public void newPopeye()
     {
-        popeye = new Popeye();
-        getWorld().addObject (popeye, getX(), getY()-20);
+        myPopeye = new Popeye();
+        getWorld().addObject (myPopeye, getX(), getY()-20);
         numPopeye ++;
        
     }
         
     public boolean havePopeye()
     {
-        return popeye != null;
+        return myPopeye != null;
     }
         
     public void releasePopeye()
     {
-        popeye.release();
-        popeye = null;
+        myPopeye.release();
+        myPopeye = null;
         //concretesubject = ConcreteSubject.getInstance();
         //score = new Score(concretesubject);
         //concretesubject.register(score);
@@ -92,11 +98,11 @@ public class Trampoline extends Actor
     }
     
     /**
-     * Method removePopeye() removes the Popeye on the Trampoline.
+     * Method removePopeye() removes the Popeye ( popeye) on the trampoline.
      */
     public void removePopeye()
     {
-        getWorld().removeObject(popeye);
+        getWorld().removeObject(myPopeye);
         //concretesubject.unregister(score);
     }
 }

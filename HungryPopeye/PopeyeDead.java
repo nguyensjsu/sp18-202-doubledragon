@@ -1,26 +1,26 @@
+import greenfoot.*;
+
 /**
  * Write a description of class PopeyeDead here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class PopeyeDead extends GameState 
+public class PopeyeDead extends GameState
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
     /**
-     * Constructor for objects of class PopeyeDead
-     */
-    public PopeyeDead(GameManager gm)
+     * Constructor for objects of class PopeyeDead.
+     * 
+     */    
+    public PopeyeDead(GameManager g)
     {
-        super(gm);
-    }
-    @Override
+        super(g);
+    } 
+    
+   @Override
     public void start()
     {
-        gm.setState(GameManager.GameStates.ONTRAMPOLINE);
-       
+        gm_manager.setState(GameManager.GameStates.ONPADDLE);
+        //System.out.println("Jumping is not valid in "+this.getClass().getName()+" state");
     }
-    
 }

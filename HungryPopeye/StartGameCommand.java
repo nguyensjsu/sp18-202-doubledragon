@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
  * Write a description of class StartGameCommand here.
@@ -20,15 +20,14 @@ public class StartGameCommand extends Actor implements ICommand
         // Add your action code here.
     }    
     
-    public StartGameCommand(IGameReceiver newGame, Trampoline t)   
+    public StartGameCommand(IGameReceiver newGame, Trampoline p)   
     {
         this.changeGame = newGame;
-        this.trampoline = t;
+        this.trampoline = p;
     }
 
     public void execute()
     {
         changeGame.doAction(trampoline);
     }
-
 }

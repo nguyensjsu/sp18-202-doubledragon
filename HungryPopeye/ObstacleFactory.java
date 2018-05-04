@@ -6,9 +6,10 @@
  */
 public class ObstacleFactory  
 {
-    static SpinachFactory l1;
-    static CheeseFactory l2;
-    static OliveFactory l3;
+    
+     static level1factory l1;
+     static level2factory l2;
+     static level3factory l3;
     public static Obstacle createObstacle(int y){
         Obstacle b = null;
         switch(y){
@@ -28,5 +29,5 @@ public class ObstacleFactory
         }
         return b;
     
-    }
+    }    
 }

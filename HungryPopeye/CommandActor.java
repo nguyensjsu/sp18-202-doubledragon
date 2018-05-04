@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
  * Write a description of class CommandActor here.
@@ -8,7 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class CommandActor extends Actor
 {
-    Trampoline t;
+    
+    Trampoline p;
     GameInvoker myGameInvoker;
     ICommand startGame; 
     ICommand exitGame;
@@ -33,17 +34,17 @@ public class CommandActor extends Actor
     
     public CommandActor(Trampoline trampoline)
     {
-        t = trampoline;
+        p = trampoline;
         myGameInvoker = new GameInvoker();
         startGameRecevier= new StartGameReceiver();
         exitGameReceiver= new ExitGameReceiver();
-        startGame = new StartGameCommand(startGameRecevier, t);
-        exitGame = new ExitGameCommand(exitGameReceiver, t);               
+        startGame = new StartGameCommand(startGameRecevier, p);
+        exitGame = new ExitGameCommand(exitGameReceiver, p);               
     }
     
     public void callInvoker(){
         
-        if (t.havePopeye() && start){
+        if (p.havePopeye() && start){
              myGameInvoker.executeGame(startGame); 
         }
         
@@ -51,5 +52,5 @@ public class CommandActor extends Actor
             myGameInvoker.executeGame(exitGame); 
         }
     }
-
+    
 }

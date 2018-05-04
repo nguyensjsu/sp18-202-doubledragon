@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 import greenfoot.*; 
-
+/**
+ *score will update te score
+ * 
+ * @author (Team 12) 
+ * @version (a version number or a date)
+ */
 public class Score extends ConcreteObserver 
 {
      
@@ -10,7 +15,7 @@ public class Score extends ConcreteObserver
     }
      public void update(Board world)
     {
-        //world.incrementScore();
+        world.incrementScore();
         /* int score = world.getScore();
         score++;
         world.setScore(score);

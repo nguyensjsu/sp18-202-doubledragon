@@ -1,16 +1,19 @@
 import greenfoot.*;
 
-/*
-    Game State Class for handling various states that game will have by implementing IGameState Interface.
-*/
-
-
+/**
+ * Write a description of class GameState here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
 public class GameState implements IGameState
 {
-    GameManager gm;
+ 
+    GameManager gm_manager;
+  
     public GameState(GameManager gm)
     {    
-        this.gm=gm;
+        gm_manager=gm;
     }
     
     public void start()

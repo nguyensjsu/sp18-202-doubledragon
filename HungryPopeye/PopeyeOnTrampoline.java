@@ -1,24 +1,26 @@
+import greenfoot.*;
+
 /**
- * Write a description of class PopeyeOnTrampoline here.
+ * Write a description of class OnTrampoline here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
 public class PopeyeOnTrampoline extends GameState
 {
-   
-    /**
-     * Constructor for objects of class PopeyeOnTrampoline
-     */
-    public PopeyeOnTrampoline(GameManager gm)
-    {
-        super(gm);
-    }
 
+    public PopeyeOnTrampoline(GameManager g)
+    {    
+        super(g); 
+    }
+    
+   
     @Override
     public void doJumping()
     {
-        gm.setState(GameManager.GameStates.JUMPING);
-        
+        gm_manager.setState(GameManager.GameStates.JUMPING);
+        //System.out.println("Jumping is not valid in "+this.getClass().getName()+" state");
     }
+    
+   
 }

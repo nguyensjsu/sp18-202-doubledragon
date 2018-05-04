@@ -1,10 +1,17 @@
 import greenfoot.*;
+
+/**
+ * Write a description of class spinachCollision here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
 public class SpinachCollision extends Actor implements CollisionHandler
 {
     private CollisionHandler successor = null;
     public void handleCollision(String objectName, Popeye objPopeye, int spinachLocationX) {
-        if(objectName.equals("apple")){
-            //System.out.println("Entered into brick check");
+        if(objectName.equals("spinach")){
+            //System.out.println("Entered into spinach check");
             int deltaY = -1 * objPopeye.getDeltaY();
             objPopeye.setDeltaY(deltaY);
             int offset = objPopeye.getX() - spinachLocationX;
@@ -15,6 +22,9 @@ public class SpinachCollision extends Actor implements CollisionHandler
             if (deltaX < -7) {
                 objPopeye.setDeltaX(-7);
             }
+            //((Board)getWorld()).removeObject(spinach);
+            //((Board)getWorld()).incrementScore();
+            //Greenfoot.playSound("Baspinach.mp3");
         }
         else {
             if(successor != null) {
@@ -22,8 +32,8 @@ public class SpinachCollision extends Actor implements CollisionHandler
             }    
         }
     }
-    
     public void setSuccessor(CollisionHandler next) {
         this.successor = next;
     }
+   
 }
