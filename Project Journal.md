@@ -1,3 +1,11 @@
+## Double Dragon, Sprint 4
+
+### Team Member Name:
+Monank Savaliya
+
+### What I did since last weekly scrum:
+Integrated different classes of the games to implement working of the game. Added background images and attactive user interface. Added music for each level.
+
 ## Double Dragon, Sprint 3
 
 ### Team Member Name:
