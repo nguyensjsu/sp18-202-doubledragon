@@ -4,7 +4,13 @@
 Monank Savaliya
 
 ### What I did since last weekly scrum:
-Integrated different classes of the games to implement working of the game. Added background images and attactive user interface. Added music for each level.
+Integrated different classes of the games to implement working of the game. Added background images and attractive user interface. Added music for each level.
+
+### Team Member Name:
+Ashish Virani
+
+### What I did since last weekly scrum:
+Worked on some of the issues of combinig all modules. Made game working. 
 
 ## Double Dragon, Sprint 3
 
