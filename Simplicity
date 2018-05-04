@@ -13,3 +13,5 @@ The 4 rules of simple design pattern speaks about simplicity that is, a design s
 3. express all concepts needed
 
 4. minimize the number of classes and methods
+
+Finally the team learned that there are only two ways to design something: so simple that there are obviously no deficiences, and so complex that there are no obvious deficiences.
