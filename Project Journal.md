@@ -25,6 +25,12 @@ Ashish Virani
 ### What I did since last weekly scrum:
 Worked on some of the issues of combinig all modules. Made game working. 
 
+### Team Member Name:
+Vijay Yadav
+
+### What I did since last weekly scrum:
+Resolved some code issues and worked on the wireframe diagrams and the ad video.
+
 ## Double Dragon, Sprint 3
 
 ### Team Member Name:
